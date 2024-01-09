@@ -67,7 +67,7 @@ def create_gui():
     root.attributes('-topmost', True)
 
     # Load background images for each land
-    land_images = ["Adventureland.png", "Fantasyland.png", "Tomorrowland.png", "Frontierland.png", "Main Street U.S.A..png"]
+    land_images = ["Adventureland.png", "Fantasyland.png", "Tomorrowland.png", "Frontierland.png", "Main Street U.S.A..png", "Liberty Square.png"]
     images = {land.split('.')[0]: ImageTk.PhotoImage(Image.open(resource_path(land)).resize((window_width, window_height), Image.Resampling.LANCZOS)) for land in land_images}
 
     background_label = tk.Label(root)
